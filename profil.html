@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+<head>
+  <title id="titre">Page des participant akaforum</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script data-main="scripts/mainProfil" src="scripts/require.js"></script>
+</head>
+
+<body>
+  <h1>fiche du membre</h1>
+  <div id="ficheMembre">
+    <ul v-for="user in profilMembre">
+      <li>id user : {{user.user_id}} </li>
+      <li>pseudo : {{user.pseudo}}</a></li>
+    </ul>
+      
+  </div>
+</body>
+
+</html>
