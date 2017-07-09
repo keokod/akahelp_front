@@ -142,5 +142,11 @@ end
 # vagrant reload --provision  #commande pour actualiser l'installation
 # composer.phar create-project --prefer-dist laravel/lumen akaforum  #créer un nouveau projet lumen
 #vagrant package --output vagrant56_default_1499000459122_71498
-
-
+#exporter la vagrant sous windows:
+#C:\Users\titi\Desktop\akaforum (master)
+#λ vagrant box add akaforum_default_1499008886411_66635 akaforum_default_1499008886411_66635.box
+#==> box: Box file was not detected as metadata. Adding it directly...
+#==> box: Adding box 'akaforum_default_1499008886411_66635' (v0) for provider:
+#    box: Unpacking necessary files from: file://C:/Users/aker/Desktop/akaforum/akaforum_default_1499008886411_66635.box
+#    box: Progress: 100% (Rate: 172M/s, Estimated time remaining: --:--:--)
+#==> box: Successfully added box 'akaforum_default_1499008886411_66635' (v0) for 'virtualbox'!
