@@ -10,8 +10,9 @@
 
 <body>
   <h1>fiche du membre</h1>
-  <div id="ficheMembre">
+  <div  id="ficheMembre">
     <ul v-for="user in profilMembre">
+      <li><img v-bind:src="'image/' + user.avatar"></li>
       <li>id user : {{user.user_id}} </li>
       <li>pseudo : {{user.pseudo}}</a></li>
     </ul>

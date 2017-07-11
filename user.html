@@ -12,6 +12,7 @@
 
   <div id="listeMembre">
     <ul v-for="user in users">
+            <li><img v-bind:src="'image/' + user.avatar"></li>
       <li>id user : {{user.user_id}} </li>
       <li>pseudo :<a v-bind:href="racineSite+'/profilMembre/'+user.user_id">{{user.pseudo}}</a></li>
     </ul>
