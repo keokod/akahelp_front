@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
-  <div id="listeSujet">
-    
+  <div id="listeSujet">   
     <ul v-for=" sujet in listeSujet">
       <li>{{sujet.pseudo}}</li>
       <li><a v-bind:href="dossierCourant+'/topic.html?id='+sujet.id ">sujet : {{sujet.sujet}}</a></li> 
