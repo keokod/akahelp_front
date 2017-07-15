@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+<head>
+  <title id="titre">Page Topic</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script data-main="scripts/mainSujet" src="scripts/require.js"></script>
+</head>
+
+<body>
+
+  <div id="listeSujet">
+    
+    <ul v-for=" sujet in listeSujet">
+      <li>{{sujet.pseudo}}</li>
+      <li><a v-bind:href="dossierCourant+'/topic.html?id='+sujet.id ">sujet : {{sujet.sujet}}</a></li> 
+      <hr/>      
+    </ul>
+  </div>
+
+</body>
+</html>
+ 
