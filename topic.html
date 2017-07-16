@@ -9,17 +9,26 @@
 </head>
 
 <body>
+  <div id="topic">
+    <h3>{{topic.pseudo}} : {{topic.sujet}}</h3>
+  </div>
+  <hr/>
+
+  <h4>reponse </h4>
+  <hr/>
 
   <div id="elemTopic">
     <ul v-for=" topic in elemTopic">
-      <li>sujet par: {{topic.pseudo}}</li> 
+      <li><u>{{topic.pseudo}} : </u></li> 
+            <li><br/><ol>{{topic.reponse}} </ol> </li> 
 
     </ul>
 
       <hr/>      
     
   </div> 
+  
 
 </body>
+
 </html>
- 

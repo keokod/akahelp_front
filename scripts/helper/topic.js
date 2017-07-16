@@ -12,7 +12,6 @@ xhttp.onreadystatechange = function () {
             el: '#elemTopic',
             data: {
                 elemTopic: topicJson,
-                sujetCourant: "toto",
             }
         })
     } 
@@ -21,10 +20,6 @@ xhttp.onreadystatechange = function () {
 xhttp.open("GET", "http://192.168.33.10:8000/topic/"+idTopic.id, true);
 xhttp.send();
 
-
-
-
-xhttp.send();
 
   function getUrlVars() {
     var vars = {};

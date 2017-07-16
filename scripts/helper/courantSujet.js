@@ -1,16 +1,14 @@
-console.log("=>liste Sujet");
+console.log("=>****courant Sujet");
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-        console.log(xhttp.responseText);
-        var sujetJson = JSON.parse(xhttp.responseText);
-        console.log(sujetJson);
+        var courantSujetJson = JSON.parse(xhttp.responseText);
 
         var leMembre = new Vue({
-            el: '#listeSujet',
+            el: '#courantSujet',
             data: {
-                listeSujet: sujetJson,
+                courantSujet: courantSujetJson,
                 dossierCourant: dossierCourant(),
             }
         })
