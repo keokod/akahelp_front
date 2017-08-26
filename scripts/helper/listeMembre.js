@@ -15,5 +15,5 @@ console.log("=>listeMembre")  ;
         })
       }
     };
-    xhttp.open("GET", "http://192.168.33.10:8000/liste_membre", true);
+    xhttp.open("GET", "http://192.168.33.10:8000/forum/liste_membre", true);
     xhttp.send();
