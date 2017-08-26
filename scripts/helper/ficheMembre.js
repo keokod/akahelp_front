@@ -15,5 +15,5 @@ xhttp.onreadystatechange = function () {
         })
     } 
 };
-xhttp.open("GET", "http://192.168.33.10:8000/profilMembre/2", true);
+xhttp.open("GET", "http://192.168.33.10:8000/forum/profil_membre/2", true);
 xhttp.send();
