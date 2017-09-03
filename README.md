@@ -145,7 +145,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     mysql -u root --password="root" -Be "GRANT USAGE ON *.* TO 'aka'@'localhost' IDENTIFIED BY '0000';"
     mysql -u root --password="root" -Be "GRANT ALL PRIVILEGES ON akaforum.* TO 'aka'@'localhost';"
     mysql -u root --password="root" -Be "FLUSH PRIVILEGES"
-  SHELL
+    cd /var/www/html
+    git clone https://github.com/keokod/aka_backend.git
+    cd aka_backend
+    composer.phar install
+SHELL
 end
 
 
